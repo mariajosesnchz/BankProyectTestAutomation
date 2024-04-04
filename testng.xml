@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Maria Jose/Desktop/PROYECTOS/MY_PROJECTS/BankProyectTestAutomation">
+        <classes>
+            <class name="testrunner.LoginDataProvider">
+                <methods>
+                    <include name="DoLogin"/>
+                </methods>
+            </class>
+            <class name="testrunner.LoginWithInvalidCredentialsTest">
+                <methods>
+                    <include name="TestInvalidCredentials"/>
+                </methods>
+            </class>
+            <class name="testrunner.LoginWithValidCredentialsTest">
+                <methods>
+                    <include name="TestValidCredencials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
